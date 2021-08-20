@@ -35,9 +35,11 @@ class Board extends Component {
     let { ncols, nrows } = this.props;
     let board = this.state.board;
     let [i, j] = coordinates.split("-").map(Number);
-
-    function flipCell() {
-      
+    
+    function flipCell(j,i) {
+      if (i >= 0 && i < ncols && j >= 0 && j < nrows) {
+        board[j][i] = !board[j][i];
+      }
     }
   }
 
