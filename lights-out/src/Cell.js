@@ -16,10 +16,10 @@ class Cell extends Component {
     return (
       <div className="Cell">
         <td className={classes} onClick={this.handleClick}></td>
-      </div>  
+      </div>
     )
     
-  }   
+  }
 }
 
 export default Cell;
